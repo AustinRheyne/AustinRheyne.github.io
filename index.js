@@ -15,6 +15,11 @@ let currentPage = 1;
 let nextBtn = document.querySelectorAll("[data-next]")[0];
 let prevBtn = document.querySelectorAll("[data-prev]")[0];
 
+// Get the submit button and send to page if it is clicked
+document.querySelectorAll("[data-submit]")[0].addEventListener("click", function() {
+    window.location.href = "submit.html";
+});
+
 // Create the page bar, based on the number of questions
 for (let i = 0; i < questions.length; i++) {
     let li = document.createElement("li")
@@ -41,6 +46,7 @@ nextBtn.addEventListener("click", function() {
     }
     changePage(currentPage+1); 
 });
+
 prevBtn.addEventListener("click", function() { 
     if(prevBtn.classList.contains("disabled")) {
         return;

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>OCS Highschool Contest</title>
+</head>
+<body>
+    <section id="Heading" class="mx-auto text-center flex-column">
+        <div class="container-fluid d-flex justify-content-center">
+            <img src="assets/images/logo.png" class="img-fluid" alt="Otterbein University">
+        </div>
+        <h1 class="display-1">OCS Highshool Coding Competition, 2023</h1>
+        <hr class="w-75 mx-auto">
+    </section>
+
+    <section id="Content" class="my-5 container-fluid">
+        <div class="d-flex flex-column">
+            <select class="form-select form-select-sm mx-auto" style="width: 5%; min-width: 100px;" aria-label="Default select example" data-select-language>
+                <option selected value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+            </select>
+
+            <div class="mx-auto my-3">
+                <select class="form-select form-select-sm w-100" aria-label="Default select example" id="questionSelector" data-select-question>
+                    <option selected value="label" class="text-muted">Question</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div class="form-group mx-auto">
+                <input type="text" class="form-control" id="teamName" aria-describedby="emailHelp" placeholder="Enter Team Name" data-team-name>
+            </div>
+
+            <div class="form-group mx-auto">
+                <label for="code">Code:</label>
+                <textarea class="form-control" id="code" rows="10" style="width: 50vw;" data-code></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-25 mx-auto mt-5" data-submit>Submit</button>
+            <small class="mx-auto"><a href="index.html" class="text-muted">Back to questions</a></small>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="submit.js"></script>
+
+    <!-- Script for the email service -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("BGVsGAcnk82tKvqhc");
+        })();
+    </script>
+</body>
