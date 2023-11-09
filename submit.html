@@ -16,16 +16,9 @@
     </section>
 
     <section id="Content" class="my-5 container-fluid">
-        <div class="d-flex flex-column">
-            <select class="form-select form-select-sm mx-auto" style="width: 5%; min-width: 100px;" aria-label="Default select example" data-select-language>
-                <option selected value="Python">Python</option>
-                <option value="Java">Java</option>
-                <option value="C++">C++</option>
-                <option value="C#">C#</option>
-            </select>
-
+        <form class="d-flex flex-column">
             <div class="mx-auto my-3">
-                <select class="form-select form-select-sm w-100" aria-label="Default select example" id="questionSelector" data-select-question>
+                <select class="form-select form-select-sm w-100" aria-label="Default select example" id="questionSelector" name="question" data-select-question>
                     <option selected value="label" class="text-muted">Question</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -39,17 +32,16 @@
                 </select>
             </div>
             <div class="form-group mx-auto">
-                <input type="text" class="form-control" id="teamName" aria-describedby="emailHelp" placeholder="Enter Team Name" data-team-name>
+                <input type="text" class="form-control" id="teamName" aria-describedby="emailHelp" placeholder="Enter Team Name" name="team_name" data-team-name>
             </div>
 
-            <div class="form-group mx-auto">
-                <label for="code">Code:</label>
-                <textarea class="form-control" id="code" rows="10" style="width: 50vw;" data-code></textarea>
+            <div class="form-group mx-auto my-5">
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name="file" data-file>
             </div>
 
-            <button type="submit" class="btn btn-primary w-25 mx-auto mt-5" data-submit>Submit</button>
+            <button type="button" class="btn btn-primary w-25 mx-auto mt-5" data-submit>Submit</button>
             <small class="mx-auto"><a href="index.html" class="text-muted">Back to questions</a></small>
-        </div>
+        </form>
     </section>
 
 
@@ -62,7 +54,7 @@
     </script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("BGVsGAcnk82tKvqhc");
+            emailjs.init("jpI6Vp4Y6tESHmfYI");
         })();
     </script>
 </body>

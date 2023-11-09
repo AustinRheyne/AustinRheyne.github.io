@@ -24,19 +24,19 @@
         },
         {
             "title" : "UPC Validation",
-            "content" : "The year is 3167, civilization has moved on into space and forgotten about earth. You are a historian on a mission to the United Sates Of America, on Earth, to learn information about products sold back in the early 2000's. In order to gain information on each product, you'll need to head back to the ship to scan it. To save time you've decided to create a program to check if a UPC is valid. To build the program, you've discovered the following information:\nA Universal Product Code is a numerical system created to identify barcodes within the US. A valid UPC is described as the following: A number containing 12 digits where each number, multiplied by the weights (1, 3, 1, 3 ...) respectively, whose sum is divisible by 10",
+            "content" : "The year is 3167, civilization has moved on into space and forgotten about earth. You are a historian on a mission to the United Sates Of America, on Earth, to learn information about products sold back in the early 2000's. In order to gain information on each product, you'll need to head back to the ship to scan it. To save time you've decided to create a program to check if a UPC is valid. To build the program, you've discovered the following information:\nA Universal Product Code is a numerical system created to identify barcodes within the US. A valid UPC is described as the following: A number containing 12 digits where each number, multiplied by the weights (3, 1, 3, 1 ...) respectively, whose sum is divisible by 10",
             "input-type" : "The input is a string code, with length 12, containing only digits",
             "output-type" : "Output a true if the code is a valid UPC, or false if otherwise",
             "test-cases" : [
                 ["\"829576019311\"", "True"],
                 ["\"134867295164\"", "False"],
-                ["\"01200002863\"", "True"]
+                ["\"012000028632\"", "True"]
             ]
         },
         {
             "title" : "Common Factors",
             "content" : "Your math teacher has given you an assignment requiring you to find the total number of common factors between 2 numbers. You, being a brilliant computer scientist, realized that the fastest way to complete this assingment is to create a program that finds the total number of common factors for you",
-            "input-type" : "The input is two integers, n and m, both are between -10,000 and 10,000",
+            "input-type" : "The input is two integers, n and m, both are between 1 and 20,000",
             "output-type" : "Output the total number of common factors between n and m",
             "test-cases" : [
                 ["12, 30", 4],
